@@ -17,7 +17,7 @@ lerna-debug.log*
 .idea
 .DS_Store
 *.suo
-*.ntvs*
+*.ntvs*co
 *.njsproj
 *.sln
 *.sw?
