@@ -136,9 +136,7 @@ main {
   border-radius: var(--radius);
   margin-bottom: 2.5rem;
 }
-.color {
-  /* color: var(--clr-primary-5); */
-}
+
 h2:hover {
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.25));
 }
