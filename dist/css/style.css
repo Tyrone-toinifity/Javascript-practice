@@ -160,6 +160,7 @@ h2:hover {
   border-radius: var(--radius);
   font-size: 1rem;
   padding: 0.75rem 1.25rem;
+  z-index: 1;
 }
 .btn-hero:hover {
   color: var(--clr-white);
@@ -171,7 +172,7 @@ h2:hover {
 .modal {
   display: none; /* Hidden by default */
   position: fixed;
-  z-index: 1; /* Sit on top */
+  z-index: 5; /* Sit on top */
   padding-top: 10rem;
   left: 0;
   top: 0;
@@ -236,4 +237,121 @@ h2:hover {
   margin: 0 5rem;
   font-size: 1.1rem;
   font-weight: 400;
+}
+
+/* Moblie */
+@media only screen and (max-width: 650px) {
+  ul {
+    padding: 0rem;
+    margin: 0rem;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-body > p {
+    margin: 0 1rem;
+  }
+  nav {
+    padding: 0.75rem;
+    width: 100%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/*  404 */
+
+HTML CSSResult Skip Results Iframe body {
+  background-color: #2f3242;
+}
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+}
+.message-box {
+  height: 200px;
+  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: 50px;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 300;
+}
+.message-box h1 {
+  font-size: 60px;
+  line-height: 46px;
+  margin-bottom: 40px;
+  color: rgb(48, 116, 142);
+}
+.message-box > p {
+  color: rgb(48, 116, 142);
+}
+.buttons-con .action-link-wrap {
+  margin-top: 40px;
+}
+.buttons-con .action-link-wrap a {
+  background: rgb(48, 116, 142);
+  padding: 8px 25px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.buttons-con .action-link-wrap a:hover {
+  background: #5a5c6c;
+  color: #fff;
+}
+
+#Polygon-1,
+#Polygon-2,
+#Polygon-3,
+#Polygon-4,
+#Polygon-4,
+#Polygon-5 {
+  animation: float 1s infinite ease-in-out alternate;
+}
+#Polygon-2 {
+  animation-delay: 0.2s;
+}
+#Polygon-3 {
+  animation-delay: 0.4s;
+}
+#Polygon-4 {
+  animation-delay: 0.6s;
+}
+#Polygon-5 {
+  animation-delay: 0.8s;
+}
+
+@keyframes float {
+  100% {
+    transform: translateY(20px);
+  }
+}
+@media (max-width: 450px) {
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -190px;
+  }
+  .message-box {
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -190px;
+    text-align: center;
+  }
 }
