@@ -206,12 +206,12 @@ h2:hover {
   cursor: pointer;
 }
 #myBtn {
-  font: 1.25rem;
-  height: 2rem;
-  background-color: #fff;
+  font-size: 1.25rem;
+  background-color: white;
   border: none;
   text-transform: none;
   cursor: pointer;
+  align-self: center;
 }
 
 .modal-body {
