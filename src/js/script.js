@@ -25,20 +25,23 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
 btn2.onclick = function (e) {
-  e.preventDefault();
   modal.style.display = "block";
 };
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function (e) {
-  e.preventDefault();
   modal.style.display = "none";
 };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  event.preventDefault();
   if (event.target == modal) {
     modal.style.display = "none";
   }
 };
+
+document.querySelector(".container").addEventListener("click", (e) => {
+  console.log("div but button");
+});
+
+// console.log(btn2.parentNode.innertex);
