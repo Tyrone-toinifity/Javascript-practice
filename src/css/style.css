@@ -158,7 +158,7 @@ h2:hover {
   border-radius: var(--radius);
   font-size: 1rem;
   padding: 0.75rem 1.25rem;
-  z-index: 1;
+  z-index: 500;
 }
 .btn-hero:hover {
   color: var(--clr-white);

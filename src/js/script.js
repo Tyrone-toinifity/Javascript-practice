@@ -21,10 +21,12 @@ var modal = document.getElementById("myModal");
 var btn2 = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.querySelector(".close");
 
 // When the user clicks the button, open the modal
 btn2.onclick = function (e) {
+  e.stopPropagation();
+  console.log(e.parentElement);
   modal.style.display = "block";
 };
 
@@ -40,8 +42,4 @@ window.onclick = function (event) {
   }
 };
 
-document.querySelector(".container").addEventListener("click", (e) => {
-  console.log("div but button");
-});
-
-// console.log(btn2.parentNode.innertex);
+document.querySelector(".container").addEventListener("click", (e) => {});
