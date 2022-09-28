@@ -276,6 +276,10 @@ h2:hover {
   }
 }
 
+/* hide | show */
+.hide {
+  visibility: hidden;
+}
 /*  404 */
 
 HTML CSSResult Skip Results Iframe body {

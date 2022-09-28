@@ -15,7 +15,6 @@ function getRandomNumber() {
   return Math.floor(Math.random() * hex.length);
 }
 
-
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -26,18 +25,22 @@ var btn2 = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
-btn2.onclick = function () {
+btn2.onclick = function (e) {
+  e.stopPropagation();
   modal.style.display = "block";
+  btn.classList.add("hide");
 };
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modal.style.display = "none";
+  btn.classList.remove("hide");
 };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    btn.classList.remove("hide");
   }
 };
